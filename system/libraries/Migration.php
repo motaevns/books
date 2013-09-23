@@ -66,7 +66,7 @@ class CI_Migration {
 		$this->lang->load('migration');
 
 		// They'll probably be using dbforge
-		$this->load->dbforge();
+        $this->load->dbforge();
 
 		// If the migrations table is missing, make it
 		if ( ! $this->db->table_exists('migrations'))
